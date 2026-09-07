@@ -2,7 +2,7 @@ export class APIService {
     constructor() {
         this.baseUrl = 'https://reqres.in/api/users';
     }
-
+//
     getUsers() {
         return cy.request({
             method: 'GET',
