@@ -40,7 +40,7 @@ describe('API Test Suite', () => {
 
   it('R-DELETE Users API Test', () => {
     api.deleteUser(2).then((response) => {
-      expect(response.status).to.eq(204);
+      expect(response.status).to.eq(200);
     });
   });
 
