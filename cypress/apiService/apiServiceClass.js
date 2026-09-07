@@ -1,6 +1,6 @@
 export class APIService {
     constructor() {
-        this.baseUrl = 'https://reqres.in/api/users';
+        this.baseUrl = 'https://jsonplaceholder.typicode.com/users';
     }
 //
     getUsers() {

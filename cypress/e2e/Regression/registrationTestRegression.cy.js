@@ -28,7 +28,7 @@ describe('registration test', () => {
 
   it('R-Error message on Date of Joining', () => {
     cy.visit('https://www.qapractice.com/practice-forms');
-    regPage.enterDateOfJoining('20202-10-10');
+    regPage.enterDateOfJoining('2020-10-10');
     regPage.clickSubmitButton();
     //validate error message is displayed for Date of Joining
     regPage.validateErrorDateOfJoining();
