@@ -3,7 +3,7 @@ import {registrationPage} from '../../pages/registrationPage';
 describe('registration test', () => {
   const regPage = new registrationPage();
 
-  it('registration successful', () => {
+  it('R-registration successful', () => {
     cy.visit('https://www.qapractice.com/practice-forms');
     regPage.enterCountryOfResidence('Canada');
     regPage.enterTitle('Mr.');
@@ -19,18 +19,18 @@ describe('registration test', () => {
     regPage.validateSucessMessage();
   })
 
-  it('Error message on Country of Residence', () => {
+  it('R-Error message on Country of Residence', () => {
     cy.visit('https://www.qapractice.com/practice-forms');
     regPage.clickSubmitButton(); 
     //valudate error message is displayed for Country of Residence
     regPage.validateErrorMessageCountryOfResidence();
   })
 
-  it('Error message on Email Format', () => {
+  it('R-Error message on Date of Joining', () => {
     cy.visit('https://www.qapractice.com/practice-forms');
     regPage.enterDateOfJoining('20202-10-10');
     regPage.clickSubmitButton();
-    //validate error message is displayed for Email Format
+    //validate error message is displayed for Date of Joining
     regPage.validateErrorDateOfJoining();
   })
 })

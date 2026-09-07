@@ -3,14 +3,14 @@ import {APIService} from '../../apiService/apiServiceClass';
 describe('API Test Suite', () => {
   const api = new APIService();
 
-  it('GET Users API Test', () => {
+  it('SO-GET Users API Test', () => {
 
     api.getUsers().then((response) => {
         expect(response.status).to.eq(200);
     })
   })
 
-  it('POST Users API Test', () => {   
+  it('SO-POST Users API Test', () => {   
 
     const userData = {
       name: 'John Test',
@@ -24,7 +24,7 @@ describe('API Test Suite', () => {
     });
   })
 
-  it('PUT Users API Test', () => {
+  it('SO-PUT Users API Test', () => {
 
     const userData = {
       name: 'John Updated',
@@ -38,7 +38,7 @@ describe('API Test Suite', () => {
     });
   })
 
-  it('DELETE Users API Test', () => {
+  it('SO-DELETE Users API Test', () => {
     api.deleteUser(2).then((response) => {
       expect(response.status).to.eq(204);
     });
