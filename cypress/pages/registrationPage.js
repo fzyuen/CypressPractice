@@ -71,6 +71,6 @@ export class registrationPage {
     }
 
     validateErrorDateOfJoining() {
-        cy.get(this.errorDateOfJoining).should('contain', 'Date of Joining format should be dd/mm/yyyy1');
+        cy.get(this.errorDateOfJoining).should('contain', 'Date of Joining format should be dd/mm/yyyy');
     }
 }   
