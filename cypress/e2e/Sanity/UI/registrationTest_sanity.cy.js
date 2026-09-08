@@ -1,4 +1,4 @@
-import {registrationPage} from '../../pages/registrationPage';
+import {registrationPage} from '../../../pages/registrationPage';
 
 describe('registration test', () => {
   const regPage = new registrationPage();

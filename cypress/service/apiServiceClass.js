@@ -6,7 +6,7 @@ export class APIService {
     getUsers() {
         return cy.request({
             method: 'GET',
-            url: this.baseUrl+'?page=2',
+            url: this.baseUrl+'/1',
         });
     }
 
