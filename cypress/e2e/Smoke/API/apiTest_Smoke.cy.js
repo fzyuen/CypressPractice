@@ -1,4 +1,4 @@
-import {APIService} from '../../../../service/apiServiceClass'
+import {APIService} from '../../../../services/apiServiceClass'
 
 describe('API Test Suite', () => {
   const api = new APIService();
